@@ -142,6 +142,8 @@ export default Component.extend({
   },
 
   dragOver (event) {
+    event.preventDefault()
+
     // This event is only used for placing the dragged element into the end of a horizontal list
     if (this.get('isVertical')) {
       return
